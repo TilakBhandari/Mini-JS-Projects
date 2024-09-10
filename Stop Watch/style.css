@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: black;
+}
+.container {
+  position: relative;
+  width: 80%;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.stopwatch {
+  background: gray;
+  /* width: 2rrem; */
+  height: 20rem;
+  border-radius: 10px;
+  display: grid;
+  grid-template-rows: 2.5rem auto 5rem;
+  padding: 15px;
+}
+.container hr {
+  display: none;
+  /* position: absolute;
+  top: 10.2rem;
+  width: 1rem;
+  margin: auto; */
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+button {
+  font-size: 1rem;
+  border: none;
+  margin: 5px;
+  padding: 10px 1rem 10px 1rem;
+  border-radius: 5px;
+  background: rgb(152, 109, 29);
+  box-shadow: 0px 0px 20px 1px whitesmoke;
+  transition: all 100ms ease-in-out;
+}
+button:hover {
+  background: rgb(181, 125, 22);
+  box-shadow: 0px 0px 10px 2px whitesmoke;
+}
+button:active {
+  background: rgb(255, 170, 0);
+  box-shadow: 0px 0px 7px 3px whitesmoke;
+}
+.display {
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  background: rgba(41, 40, 40, 0.5);
+  border: none;
+  border-radius: 5px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+}
+.title {
+  height: 2rem;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 900;
+}
